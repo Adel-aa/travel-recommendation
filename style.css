@@ -24,10 +24,6 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -53,65 +49,30 @@ input, button {
 
 /* About Section */
 .about {
-    background-image: url('https://via.placeholder.com/1200x500');
-    background-size: cover;
-    color: white;
+    background-color: #f4f4f4;
+    color: black;
     padding: 50px;
 }
 
-.about-content {
+.about h2, .about h3 {
     text-align: center;
-}
-
-.about h2 {
-    font-size: 2em;
 }
 
 .about ul {
     list-style: none;
-    padding: 0;
-}
-
-.about ul li {
-    margin: 10px 0;
+    text-align: center;
 }
 
 /* Contact Section */
 .contact {
-    padding: 50px;
     background-color: #f9f9f9;
+    padding: 50px;
     text-align: center;
-}
-
-.contact form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contact label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-
-.contact button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
 }
 
 /* Recommendations Section */
 .recommendations {
     padding: 50px;
-    text-align: center;
 }
 
 .recommendations .recommendation-item {
@@ -121,15 +82,7 @@ input, button {
     text-align: left;
 }
 
-.recommendations .recommendation-item img {
+.recommendations img {
     width: 100%;
     height: auto;
-}
-
-.recommendations h2 {
-    font-size: 2em;
-}
-
-button {
-    cursor: pointer;
 }
