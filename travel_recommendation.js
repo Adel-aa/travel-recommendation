@@ -13,7 +13,7 @@ async function searchRecommendations() {
     const query = document.getElementById("search-bar").value.toLowerCase();
     const results = document.getElementById("results");
     results.innerHTML = ""; // Clear existing results
-
+    
     const data = await fetchRecommendations();
 
     const filtered = data.filter(item =>
@@ -31,8 +31,9 @@ async function searchRecommendations() {
         results.innerHTML += resultCard;
     });
 
-    if (filtered.length === 0 && query === "cairo") {
-        alert("Details for Cairo Trip: Visit the historic sites and explore the city!");
+    // Show pop-up if search matches "Cairo"
+    if (query.includes("cairo")) {
+        alert("Details for Cairo trip: A beautiful historical destination!");
     }
 }
 
