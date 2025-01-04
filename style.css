@@ -178,3 +178,54 @@ footer p {
 .social-icon:hover {
     color: #ffa500;
 }
+
+/* About Us Section */
+#about-us {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Contact Us Section */
+#contact-us {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact-us input, #contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-us button {
+    background-color: #ffa500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-us button:hover {
+    background-color: #e69500;
+}
