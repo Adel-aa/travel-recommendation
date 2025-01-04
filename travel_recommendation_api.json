@@ -1,23 +1,23 @@
 [
     {
-      "id": 1,
-      "type": "beach",
-      "name": "Bora Bora",
-      "description": "A beautiful island with crystal-clear water.",
-      "imageUrl": "https://images.unsplash.com/photo-1506593248592-7e23b59992c7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8Ym9yYSBib3JhfGVufDB8fHx8fDE2MzgzNzU0NTk&ixlib=rb-1.2.1&q=80&w=1080"
+        "id": 1,
+        "type": "beach",
+        "name": "Bora Bora",
+        "description": "A beautiful island with crystal-clear water and white-sand beaches.",
+        "imageUrl": "https://images.unsplash.com/photo-1506593248592-7e23b59992c7"
     },
     {
-      "id": 2,
-      "type": "temple",
-      "name": "Angkor Wat",
-      "description": "A majestic temple in Cambodia.",
-      "imageUrl": "https://images.unsplash.com/photo-1553801882-62f84b801ff7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8MXx8YW5na29yIHdhdHxlbnwwfHx8fDE2MzgzNzU3Mzg&ixlib=rb-1.2.1&q=80&w=1080"
+        "id": 2,
+        "type": "temple",
+        "name": "Angkor Wat",
+        "description": "A majestic temple in Cambodia, a UNESCO World Heritage site.",
+        "imageUrl": "https://images.unsplash.com/photo-1553801882-62f84b801ff7"
     },
     {
-      "id": 3,
-      "type": "beach",
-      "name": "Maldives",
-      "description": "A tropical paradise with white-sand beaches.",
-      "imageUrl": "https://images.unsplash.com/photo-1521131291496-ea4fc83fc50a?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8TWFsZGl2ZXN8ZW58MHx8fHwxNjM4Mzc1NzI0&ixlib=rb-1.2.1&q=80&w=1080"
+        "id": 3,
+        "type": "beach",
+        "name": "Maldives",
+        "description": "A tropical paradise with white-sand beaches and crystal-clear lagoons.",
+        "imageUrl": "https://images.unsplash.com/photo-1521131291496-ea4fc83fc50a"
     }
 ]
