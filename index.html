@@ -8,9 +8,8 @@
 </head>
 <body>
   <header>
-      <!-- Navigation Bar -->
     <nav>
-          <a href="#">Home</a>
+      <a href="#">Home</a>
       <a href="#about-us">About Us</a>
       <a href="#recommendations">Recommendations</a>
       <input type="text" id="search-bar" placeholder="Search for destinations (e.g., Cairo)">
@@ -20,7 +19,7 @@
   </header>
 
   <main>
-    <!-- About Us Section (Full Page Height) -->
+    <!-- About Us Section -->
     <section id="about-us" class="full-page-section">
       <div class="section-content">
         <h2>About Us</h2>
@@ -28,10 +27,21 @@
       </div>
     </section>
 
-    <!-- Recommendations Section (Full Page Height) -->
+    <!-- Recommendations Section (with two places) -->
     <section id="recommendations" class="full-page-section">
       <h2>Our Recommendations</h2>
-      <div id="results" class="results"></div>
+      <div id="recommendations-container" class="recommendations-container">
+        <div class="recommendation-item">
+          <img src="https://images.unsplash.com/photo-1581464854559-57db31e3de1b" alt="Cairo Trip">
+          <h3>Cairo, Egypt</h3>
+          <p>Explore the fascinating history of Cairo, including the Great Pyramids of Giza, the Sphinx, and the Egyptian Museum. A must-see destination for those seeking ancient culture and modern vibrancy.</p>
+        </div>
+        <div class="recommendation-item">
+          <img src="https://images.unsplash.com/photo-1504272323257-d9c39f09a6fa" alt="Paris Trip">
+          <h3>Paris, France</h3>
+          <p>Experience the romance and elegance of Paris, with its iconic Eiffel Tower, Louvre Museum, and charming cafes. Perfect for art lovers, history enthusiasts, and anyone looking to enjoy beautiful cityscapes.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Modal for Showing Cairo Trip Details -->
