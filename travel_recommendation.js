@@ -17,15 +17,9 @@ async function searchRecommendations() {
     const data = await fetchRecommendations();
 
     const filtered = data.filter(item =>
-        item.name.toLowerCase().includes(query) || item.type.toLowerCase().includes(query)
+        item.name.toLowerCase().includes(query) || item.type.includes(query)
     );
 
-    // Special case for Cairo - display popup
-    if (query === "cairo") {
-        showCairoModal();
-    }
-
-    // Display filtered recommendations
     filtered.forEach(item => {
         const resultCard = `
         <div class="result-card">
@@ -36,25 +30,30 @@ async function searchRecommendations() {
       `;
         results.innerHTML += resultCard;
     });
-}
 
-// Show the Cairo Trip details in a modal
-function showCairoModal() {
-    const modal = document.getElementById("cairo-modal");
-    modal.style.display = "block";
+    // If Cairo is searched, show the popup
+    if (query === "cairo") {
+        showPopup("Cairo Trip", "Explore the wonders of Cairo with its rich culture and historical landmarks.");
+    }
 }
-
-// Close the modal
-document.getElementById("close-modal").addEventListener("click", function () {
-    const modal = document.getElementById("cairo-modal");
-    modal.style.display = "none";
-});
 
 // Clear search results
 function clearResults() {
     document.getElementById("search-bar").value = "";
     document.getElementById("results").innerHTML = "";
 }
+
+// Show Popup with trip details
+function showPopup(title, description) {
+    document.getElementById("popup-title").textContent = title;
+    document.getElementById("popup-description").textContent = description;
+    document.getElementById("popup-modal").style.display = "flex";
+}
+
+// Close Popup
+document.getElementById("close-popup").addEventListener("click", () => {
+    document.getElementById("popup-modal").style.display = "none";
+});
 
 // Event listeners for search and clear buttons
 document.getElementById("search-btn").addEventListener("click", searchRecommendations);
