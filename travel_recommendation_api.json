@@ -1,17 +1,23 @@
 [
     {
-      "id": 1,
-      "type": "beach",
-      "name": "Bora Bora",
-      "description": "A beautiful island with crystal-clear water.",
-      "imageUrl": "https://images.unsplash.com/photo-1506593248592-7e23b59992c7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8Ym9yYSBib3JhfGVufDB8fHx8fDE2MzgzNzU0NTk&ixlib=rb-1.2.1&q=80&w=1080"
-        },
+        "id": 1,
+        "type": "beach",
+        "name": "Bora Bora",
+        "description": "A beautiful island with crystal-clear water.",
+        "imageUrl": "https://images.unsplash.com/photo-1506593248592-7e23b59992c7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8Ym9yYSBib3JhfGVufDB8fHx8fDE2MzgzNzU0NTk&ixlib=rb-1.2.1&q=80&w=1080"
+    },
     {
-      "id": 2,
-      "type": "temple",
-        "name": "Angkor Wat",
-      "description": "A majestic temple in Cambodia.",
-      "imageUrl": "https://images.unsplash.com/photo-1553801882-62f84b801ff7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8MXx8YW5na29yIHdhdHxlbnwwfHx8fDE2MzgzNzU3Mzg&ixlib=rb-1.2.1&q=80&w=1080"
+        "id": 2,
+        "type": "mountain",
+        "name": "Swiss Alps",
+        "description": "A perfect spot for hiking and skiing.",
+        "imageUrl": "https://images.unsplash.com/photo-1570145412285-338a2d89d897?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8c3dpc3N8ZW58MHx8fHx8fDE2MzgzNzU3MjE&ixlib=rb-1.2.1&q=80&w=1080"
+    },
+    {
+        "id": 3,
+        "type": "city",
+        "name": "Tokyo",
+        "description": "A vibrant city full of culture and modernity.",
+        "imageUrl": "https://images.unsplash.com/photo-1550503877-d6b1f3b11196?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8dG9reW98ZW58MHx8fHx8fDE2MzgzNzU4Mzc&ixlib=rb-1.2.1&q=80&w=1080"
     }
-  ]
-        
+]
