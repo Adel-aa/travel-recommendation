@@ -60,9 +60,9 @@ nav a:hover {
 /* Main Section Styling */
 #intro {
     position: relative;
-        width: 100%;
+    width: 100%;
     height: 100vh;
-    background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg'); /* Updated Image */
+    background-image: url('https://images.unsplash.com/photo-1506593248592-7e23b59992c7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8Ym9yYSBib3JhfGVufDB8fHx8fDE2MzgzNzU0NTk&ixlib=rb-1.2.1&q=80&w=1080'); /* Updated Image */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -78,7 +78,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg');
+    background-image: url('https://images.unsplash.com/photo-1506593248592-7e23b59992c7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8Ym9yYSBib3JhfGVufDB8fHx8fDE2MzgzNzU0NTk&ixlib=rb-1.2.1&q=80&w=1080');
     background-size: cover;
     background-position: center;
     opacity: 0.6;
@@ -110,6 +110,23 @@ p {
 
 .book-now-btn:hover {
     background-color: #e69500;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1rem;
+    color: #666;
 }
 
 /* Results Section */
@@ -162,19 +179,4 @@ footer {
 
 footer p {
     margin-bottom: 10px;
-}
-
-.social-media {
-    margin-top: 10px;
-}
-
-.social-icon {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-.social-icon:hover {
-    color: #ffa500;
 }
