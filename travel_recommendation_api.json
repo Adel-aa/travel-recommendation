@@ -4,20 +4,20 @@
         "type": "beach",
         "name": "Bora Bora",
         "description": "A beautiful island with crystal-clear water and white-sand beaches.",
-        "imageUrl": "https://images.unsplash.com/photo-1506593248592-7e23b59992c7"
+        "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
     },
     {
         "id": 2,
         "type": "temple",
         "name": "Angkor Wat",
         "description": "A majestic temple in Cambodia, a UNESCO World Heritage site.",
-        "imageUrl": "https://images.unsplash.com/photo-1553801882-62f84b801ff7"
+        "imageUrl": "https://images.unsplash.com/photo-1588392382834-a891154bca4d"
     },
     {
         "id": 3,
         "type": "beach",
         "name": "Maldives",
         "description": "A tropical paradise with white-sand beaches and crystal-clear lagoons.",
-        "imageUrl": "https://images.unsplash.com/photo-1521131291496-ea4fc83fc50a"
+        "imageUrl": "https://images.unsplash.com/photo-1578597149790-827dcf560db4"
     }
 ]
