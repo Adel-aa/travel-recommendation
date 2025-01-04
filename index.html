@@ -1,59 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TravelBloom - Travel Recommendations</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Travel Recommendations</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-      <!-- Navigation Bar -->
-    <nav>
-          <a href="#">Home</a>
-      <a href="#about-us">About Us</a>
-      <a href="#recommendations">Recommendations</a>
-      <input type="text" id="search-bar" placeholder="Search for destinations (e.g., Cairo)">
-      <button id="search-btn">Search</button>
-      <button id="reset-btn">Clear</button>
-    </nav>
-  </header>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#">Contact Us</a>
+            <input type="text" id="search-bar" placeholder="Search destinations">
+            <button id="search-btn">Search</button>
+            <button id="reset-btn">Clear</button>
+        </nav>
+    </header>
 
-  <main>
-    <!-- About Us Section (Full Page Height) -->
-    <section id="about-us" class="full-page-section">
-      <div class="section-content">
-        <h2>About Us</h2>
-        <p>At TravelBloom, we help you explore the world's best destinations with detailed travel recommendations, personalized experiences, and stunning visuals.</p>
-      </div>
-    </section>
+    <main>
+        <!-- Main Section with Background Image -->
+        <section id="intro">
+            <div class="background-image">
+                <div class="content-overlay">
+                    <h1>Explore Your Next Adventure</h1>
+                    <p>Discover new destinations, explore diverse cultures, and make unforgettable memories.</p>
+                    <a href="#results" class="book-now-btn">Book Now</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- Recommendations Section (Full Page Height) -->
-    <section id="recommendations" class="full-page-section">
-      <h2>Our Recommendations</h2>
-      <div id="results" class="results"></div>
-    </section>
+        <!-- Recommendations Section -->
+        <section id="recommendations">
+            <div class="background-image">
+                <div class="content-overlay">
+                    <h2>Our Top Recommendations</h2>
+                    <div class="result-card">
+                        <img src="https://images.unsplash.com/photo-1506593248592-7e23b59992c7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8Ym9yYSBib3JhfGVufDB8fHx8fDE2MzgzNzU0NTk&ixlib=rb-1.2.1&q=80&w=1080" alt="Bora Bora">
+                        <h3>Bora Bora</h3>
+                        <p>A beautiful island with crystal-clear water.</p>
+                    </div>
+                    <div class="result-card">
+                        <img src="https://images.unsplash.com/photo-1553801882-62f84b801ff7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8MXx8YW5na29yIHdhdHxlbnwwfHx8fDE2MzgzNzU3Mzg&ixlib=rb-1.2.1&q=80&w=1080" alt="Angkor Wat">
+                        <h3>Angkor Wat</h3>
+                        <p>A majestic temple in Cambodia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Modal for Showing Cairo Trip Details -->
-    <div id="cairo-modal" class="modal">
-      <div class="modal-content">
-        <span id="close-modal" class="close">&times;</span>
-        <h3>Cairo Trip</h3>
-        <img src="https://images.unsplash.com/photo-1581464854559-57db31e3de1b" alt="Cairo Trip">
-        <p>Experience the vibrant culture, ancient history, and iconic landmarks of Cairo. Visit the Pyramids, the Sphinx, and the Egyptian Museum!</p>
-      </div>
+        <!-- About Us Section -->
+        <section id="about-us">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>At TravelBloom, we are passionate about helping you explore new places. Whether you're looking for a beach vacation, an adventure in the mountains, or cultural trips to iconic landmarks, we have the perfect destination for you. Let us guide you to your next unforgettable journey.</p>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results"></section>
+    </main>
+
+    <footer>
+        <!-- Footer Section with Social Media Links -->
+        <p>&copy; 2025 TravelBloom</p>
+        <div class="social-media">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Popup Modal for Trip Details -->
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <h3 id="popup-title">Trip Details</h3>
+            <p id="popup-description"></p>
+            <button id="close-popup">Close</button>
+        </div>
     </div>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 TravelBloom</p>
-    <div class="social-media">
-      <a href="#" class="social-icon">Facebook</a>
-      <a href="#" class="social-icon">Twitter</a>
-      <a href="#" class="social-icon">Instagram</a>
-    </div>
-  </footer>
-
-  <script src="travel_recommendation.js"></script>
+    <script src="travel_recommendation.js"></script>
 </body>
 </html>
