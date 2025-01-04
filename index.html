@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TravelBloom - Travel Recommendations</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
-      <input type="text" id="search-bar" placeholder="Search destinations">
-      <button id="search-btn">Search</button>
-      <button id="reset-btn">Clear</button>
-    </nav>
-  </header>
 
-  <main>
-    <!-- Main Section with Background Image -->
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#recommendations">Recommendations</a>
+            <input type="text" id="search-bar" placeholder="Search by name or type">
+            <button id="search-btn">Search</button>
+            <button id="reset-btn">Reset</button>
+        </nav>
+    </header>
+
+    <!-- Intro Section -->
     <section id="intro">
-      <div class="background-image">
+        <div class="background-image"></div>
         <div class="content-overlay">
-          <h1>Explore Your Next Adventure</h1>
-          <p>Discover new destinations, explore diverse cultures, and make unforgettable memories.</p>
-          <a href="#results" class="book-now-btn">Book Now</a>
+            <h1>Explore the World</h1>
+            <p>Find the best places to visit and get personalized travel recommendations.</p>
+            <a href="#recommendations" class="book-now-btn">Explore Recommendations</a>
         </div>
-      </div>
     </section>
 
-    <!-- Results Section -->
-    <section id="results"></section>
-  </main>
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <p>We are a travel recommendation service designed to help you explore beautiful destinations around the world. Whether you're looking for a relaxing beach getaway or a cultural city experience, we've got you covered!</p>
+    </section>
 
-  <footer>
-    <!-- Footer Section with Social Media Links -->
-    <p>&copy; 2025 TravelBloom</p>
-    <div class="social-media">
-      <a href="#" class="social-icon">Facebook</a>
-      <a href="#" class="social-icon">Twitter</a>
-      <a href="#" class="social-icon">Instagram</a>
-    </div>
-  </footer>
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+        <h2>Our Recommendations</h2>
+        <div id="results" class="results"></div>
+    </section>
 
-  <script src="travel_recommendation.js"></script>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Travel Recommendations. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
