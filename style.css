@@ -1,3 +1,36 @@
+    /* Main Section Styling */
+#intro {
+    position: relative;
+            width: 100%;
+    height: 100vh;
+    background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg'); /* Updated Image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+
 /* General Reset and Box Model */
 * {
     margin: 0;
