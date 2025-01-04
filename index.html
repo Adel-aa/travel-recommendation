@@ -1,84 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TravelBloom - Travel Recommendations</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <!-- Navigation Bar -->
+    <!-- Navbar -->
     <nav>
-      <a href="#">Home</a>
-      <a href="#about-us">About Us</a>
-      <a href="#contact-us">Contact Us</a>
-      <input type="text" id="search-bar" placeholder="Search destinations">
-      <button id="search-btn">Search</button>
-      <button id="reset-btn">Clear</button>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <input type="text" id="search-bar" placeholder="Search for recommendations">
+        <button id="search-btn" onclick="searchRecommendations()">Search</button>
+        <button id="reset-btn" onclick="clearResults()">Reset</button>
     </nav>
-  </header>
 
-  <main>
-    <!-- Main Section with Background Image -->
-    <section id="intro">
-      <div class="background-image">
-        <div class="content-overlay">
-          <h1>Explore Your Next Adventure</h1>
-          <p>Discover new destinations, explore diverse cultures, and make unforgettable memories.</p>
-          <a href="#results" class="book-now-btn">Book Now</a>
+    <!-- Home Page -->
+    <div class="home-page">
+        <h1>Welcome to TravelBloom!</h1>
+        <p>Your one-stop destination for travel recommendations.</p>
+        <img src="your-background-image.jpg" alt="Travel Background" class="background-img">
+        <div class="social-media-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
         </div>
-      </div>
-    </section>
-
-    <!-- Results Section with Destinations -->
-    <section id="results">
-      <h2>Featured Destinations</h2>
-      <div class="destination-card">
-        <img src="https://images.unsplash.com/photo-1506593248592-7e23b59992c7" alt="Bora Bora">
-        <h3>Bora Bora</h3>
-        <p>A beautiful island with crystal-clear water and white-sand beaches.</p>
-      </div>
-      <div class="destination-card">
-        <img src="https://images.unsplash.com/photo-1553801882-62f84b801ff7" alt="Angkor Wat">
-        <h3>Angkor Wat</h3>
-        <p>A majestic temple in Cambodia, a UNESCO World Heritage site.</p>
-      </div>
-      <div class="destination-card">
-        <img src="https://images.unsplash.com/photo-1521131291496-ea4fc83fc50a" alt="Maldives">
-        <h3>Maldives</h3>
-        <p>A tropical paradise with white-sand beaches and crystal-clear lagoons.</p>
-      </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about-us">
-      <h2>About Us</h2>
-      <p>We provide personalized travel recommendations to help you find your next adventure!</p>
-    </section>
-
-    <!-- Contact Us Section -->
-    <section id="contact-us">
-      <h2>Contact Us</h2>
-      <form action="mailto:info@travelbloom.com" method="post" enctype="text/plain">
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 TravelBloom</p>
-    <div class="social-media">
-      <a href="#" class="social-icon">Facebook</a>
-      <a href="#" class="social-icon">Twitter</a>
-      <a href="#" class="social-icon">Instagram</a>
     </div>
-  </footer>
 
-  <script src="travel_recommendation.js"></script>
+    <!-- About Us Page -->
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>TravelBloom is a travel recommendation platform dedicated to helping you find the best travel destinations based on your interests.</p>
+        <h3>Our Team</h3>
+        <ul>
+            <li>John Doe - CEO</li>
+            <li>Jane Smith - Lead Developer</li>
+            <li>Robert Brown - Marketing Manager</li>
+        </ul>
+    </div>
+
+    <!-- Contact Us Page -->
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="results"></div>
+
+    <script src="travel_recommendation.js"></script>
 </body>
 </html>
