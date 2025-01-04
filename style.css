@@ -5,27 +5,35 @@
     box-sizing: border-box;
 }
 
-/* Full-Page Sections */
-.full-page-section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    padding: 20px;
+    color: #333;
 }
 
-#about-us {
-    background-color: #ffa500;
-    color: white;
-    text-align: center;
-}
-
-#recommendations {
+/* Header and Navbar */
+header {
     background-color: #222;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav a {
     color: white;
-    text-align: center;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffa500;
 }
 
 #search-bar {
@@ -49,49 +57,69 @@
     background-color: #e69500;
 }
 
-/* Modal for Cairo Trip Details */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
+/* Main Section Styling */
+#intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.background-image {
+    position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 60px;
+    background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
 }
 
-.modal-content {
-    background-color: white;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
+.content-overlay {
+    position: relative;
+    z-index: 1;
 }
 
-.close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    float: right;
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
+p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.book-now-btn {
+    background-color: #ffa500;
+    padding: 10px 20px;
     text-decoration: none;
-    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
 }
 
-/* Result Cards */
-.results {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.book-now-btn:hover {
+    background-color: #e69500;
+}
+
+/* Recommendations Section */
+#recommendations {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+#recommendations .background-image {
+    background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg');
 }
 
 .result-card {
@@ -101,7 +129,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s;
+    margin: 20px;
 }
 
 .result-card img {
@@ -121,8 +149,54 @@
     color: #666;
 }
 
-.result-card:hover {
-    transform: translateY(-10px);
+/* About Us Section */
+#about-us {
+    background-color: #222;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+#about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 1.2rem;
+}
+
+/* Popup Modal Styling */
+.popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+#close-popup {
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#close-popup:hover {
+    background-color: #e69500;
 }
 
 /* Footer Styling */
