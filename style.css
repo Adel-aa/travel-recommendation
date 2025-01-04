@@ -51,18 +51,18 @@ nav a:hover {
     background-color: #ffa500;
     color: white;
     cursor: pointer;
-        }
+}
 
 #search-btn:hover, #reset-btn:hover {
-            background-color: #e69500;
+    background-color: #e69500;
 }
 
 /* Main Section Styling */
 #intro {
     position: relative;
-            width: 100%;
+    width: 100%;
     height: 100vh;
-    background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg'); /* Updated Image */
+    background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -70,13 +70,13 @@ nav a:hover {
     align-items: center;
     color: white;
     text-align: center;
-    }
-    
+}
+
 .background-image {
     position: absolute;
     top: 0;
     left: 0;
-            width: 100%;
+    width: 100%;
     height: 100%;
     background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg');
     background-size: cover;
@@ -112,9 +112,21 @@ p {
     background-color: #e69500;
 }
 
+/* About Us Section */
+#about {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Recommendations Section */
+#recommendations {
+    padding: 40px;
+    background-color: #fff;
+}
+
 /* Results Section */
 #results {
-    padding: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
