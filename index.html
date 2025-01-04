@@ -11,8 +11,8 @@
     <!-- Navigation Bar -->
     <nav>
       <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
+      <a href="#about-us">About Us</a>
+      <a href="#contact-us">Contact Us</a>
       <input type="text" id="search-bar" placeholder="Search destinations">
       <button id="search-btn">Search</button>
       <button id="reset-btn">Clear</button>
@@ -33,6 +33,24 @@
 
     <!-- Results Section -->
     <section id="results"></section>
+
+    <!-- About Us Page -->
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p>We provide personalized travel recommendations to help you find your next adventure!</p>
+    </section>
+
+    <!-- Contact Us Page -->
+    <section id="contact-us">
+      <h2>Contact Us</h2>
+      <form action="mailto:info@travelbloom.com" method="post" enctype="text/plain">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
