@@ -1,48 +1,80 @@
-// Function to fetch and filter data for destinations
-async function fetchRecommendations() {
-    try {
-        const response = await fetch("travel_recommendation_api.json");
-        return await response.json();
-    } catch (error) {
-        console.error("Error fetching data:", error);
+// Sample data from the API
+const travelData = {
+    beach: [
+        {
+            name: "Bondi Beach",
+            imageUrl: "https://via.placeholder.com/400x300",
+            description: "A famous beach in Sydney, Australia."
+        },
+        {
+            name: "Waikiki Beach",
+            imageUrl: "https://via.placeholder.com/400x300",
+            description: "A popular beach in Honolulu, Hawaii."
+        }
+    ],
+    temple: [
+        {
+            name: "Angkor Wat",
+            imageUrl: "https://via.placeholder.com/400x300",
+            description: "A historical temple in Cambodia."
+        },
+        {
+            name: "Golden Temple",
+            imageUrl: "https://via.placeholder.com/400x300",
+            description: "A stunning religious site in India."
+        }
+    ],
+    country: [
+        {
+            name: "USA",
+            imageUrl: "https://via.placeholder.com/400x300",
+            description: "A country known for its diverse landscapes and culture."
+        },
+        {
+            name: "Japan",
+            imageUrl: "https://via.placeholder.com/400x300",
+            description: "A country known for its technology and tradition."
+        }
+    ]
+};
+
+// Show Recommendations based on keyword
+document.getElementById('search-button').addEventListener('click', () => {
+    const searchQuery = document.getElementById('search-bar').value.toLowerCase().trim();
+    const recommendations = travelData[searchQuery];
+    
+    if (recommendations) {
+        const recommendationList = document.getElementById('recommendation-list');
+        recommendationList.innerHTML = '';
+        
+        recommendations.forEach(place => {
+            const recommendationItem = document.createElement('div');
+            recommendationItem.classList.add('recommendation-item');
+            
+            recommendationItem.innerHTML = `
+                <img src="${place.imageUrl}" alt="${place.name}">
+                <h3>${place.name}</h3>
+                <p>${place.description}</p>
+            `;
+            
+            recommendationList.appendChild(recommendationItem);
+        });
+    } else {
+        alert('No recommendations found for this keyword.');
     }
-}
+});
 
-// Function to display search results
-async function searchRecommendations() {
-    const query = document.getElementById("search-bar").value.toLowerCase();
-    const results = document.getElementById("results");
-    results.innerHTML = ""; // Clear existing results
+// Clear button functionality
+document.getElementById('clear-button').addEventListener('click', () => {
+    document.getElementById('recommendation-list').innerHTML = '';
+    document.getElementById('search-bar').value = '';
+});
 
-    const data = await fetchRecommendations();
-
-    const filtered = data.filter(item =>
-        item.name.toLowerCase().includes(query) || item.type.includes(query)
-    );
-
-    // If no matches found, show a message
-    if (filtered.length === 0) {
-        results.innerHTML = "<p>No destinations found matching your search.</p>";
-    }
-
-    filtered.forEach(item => {
-        const resultCard = `
-        <div class="destination-card">
-            <img src="${item.imageUrl}" alt="${item.name}">
-            <h3>${item.name}</h3>
-            <p>${item.description}</p>
-        </div>
-      `;
-        results.innerHTML += resultCard;
-    });
-}
-
-// Function to clear search results
-function clearResults() {
-    document.getElementById("search-bar").value = "";
-    document.getElementById("results").innerHTML = "";
-}
-
-// Event listeners for search and clear buttons
-document.getElementById("search-btn").addEventListener("click", searchRecommendations);
-document.getElementById("reset-btn").addEventListener("click", clearResults);
+// Contact form submit
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    alert(`Thank you, ${name}. We have received your message.`);
+});
