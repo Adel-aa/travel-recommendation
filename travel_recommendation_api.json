@@ -8,7 +8,7 @@
     },
     {
         "id": 2,
-        "type": "mountain",
+            "type": "mountain",
         "name": "Swiss Alps",
         "description": "A perfect spot for hiking and skiing.",
         "imageUrl": "https://images.unsplash.com/photo-1570145412285-338a2d89d897?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8c3dpc3N8ZW58MHx8fHx8fDE2MzgzNzU3MjE&ixlib=rb-1.2.1&q=80&w=1080"
@@ -21,3 +21,21 @@
         "imageUrl": "https://images.unsplash.com/photo-1550503877-d6b1f3b11196?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8dG9reW98ZW58MHx8fHx8fDE2MzgzNzU4Mzc&ixlib=rb-1.2.1&q=80&w=1080"
     }
 ]
+
+
+
+    [
+    {
+        "name": "Paris",
+        "description": "The city of lights with iconic landmarks such as the Eiffel Tower.",
+        "imageUrl": "https://example.com/paris.jpg",
+        "type": "City"
+    },
+    {
+        "name": "Tokyo",
+        "description": "A vibrant metropolis blending modernity with tradition.",
+        "imageUrl": "https://example.com/tokyo.jpg",
+        "type": "City"
+    }
+]
+
