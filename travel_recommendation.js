@@ -8,7 +8,7 @@ async function fetchRecommendations() {
     }
 }
 
-// Display search results
+        // Display search results
 async function searchRecommendations() {
     const query = document.getElementById("search-bar").value.toLowerCase();
     const results = document.getElementById("results");
@@ -17,7 +17,7 @@ async function searchRecommendations() {
     const data = await fetchRecommendations();
 
     const filtered = data.filter(item =>
-        item.name.toLowerCase().includes(query) || item.type.toLowerCase().includes(query)
+        item.name.toLowerCase().includes(query) || item.type.includes(query)
     );
 
     filtered.forEach(item => {
