@@ -25,17 +25,6 @@
 
 
     
-    {
-        "name": "Paris",
-        "description": "The city of lights with iconic landmarks such as the Eiffel Tower.",
-        "imageUrl": "https://example.com/paris.jpg",
-        "type": "City"
-    },
-    {
-        "name": "Tokyo",
-        "description": "A vibrant metropolis blending modernity with tradition.",
-        "imageUrl": "https://example.com/tokyo.jpg",
-        "type": "City"
-    }
+  
 ]
 
