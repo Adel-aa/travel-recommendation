@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,6 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Recommendations</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* تحسين التنسيق */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #0077b6;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav input[type="text"] {
+            padding: 5px;
+            margin-left: 15px;
+            width: 200px;
+        }
+
+        nav button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            border: none;
+            background-color: #0096c7;
+            color: white;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .home {
+            background-image: url('https://via.placeholder.com/1200x500');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home .intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .about, .contact, .recommendations {
+            background-color: #f1f1f1;
+            margin-top: 20px;
+        }
+
+        form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        form button {
+            background-color: #0077b6;
+            color: white;
+            cursor: pointer;
+        }
+
+        .recommendations #recommendation-list {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .recommendation-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            width: 250px;
+            background-color: white;
+        }
+
+        .recommendation-item h3 {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -63,7 +178,7 @@
         <h2>Recommended Places</h2>
         <div id="recommendation-list"></div>
     </section>
-
+    
     <script src="travel_recommendation.js"></script>
 </body>
 
