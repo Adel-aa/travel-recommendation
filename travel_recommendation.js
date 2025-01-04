@@ -1,4 +1,4 @@
-// Fetch and filter data
+// Function to fetch and filter data for destinations
 async function fetchRecommendations() {
     try {
         const response = await fetch("travel_recommendation_api.json");
@@ -8,7 +8,7 @@ async function fetchRecommendations() {
     }
 }
 
-// Display search results
+// Function to display search results
 async function searchRecommendations() {
     const query = document.getElementById("search-bar").value.toLowerCase();
     const results = document.getElementById("results");
@@ -20,9 +20,14 @@ async function searchRecommendations() {
         item.name.toLowerCase().includes(query) || item.type.includes(query)
     );
 
+    // If no matches found, show a message
+    if (filtered.length === 0) {
+        results.innerHTML = "<p>No destinations found matching your search.</p>";
+    }
+
     filtered.forEach(item => {
         const resultCard = `
-        <div class="result-card">
+        <div class="destination-card">
             <img src="${item.imageUrl}" alt="${item.name}">
             <h3>${item.name}</h3>
             <p>${item.description}</p>
@@ -32,7 +37,7 @@ async function searchRecommendations() {
     });
 }
 
-// Clear search results
+// Function to clear search results
 function clearResults() {
     document.getElementById("search-bar").value = "";
     document.getElementById("results").innerHTML = "";
