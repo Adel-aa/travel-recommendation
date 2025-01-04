@@ -11,7 +11,7 @@
         <!-- Navigation Bar -->
         <nav>
             <a href="#">Home</a>
-            <a href="#about-us">About Us</a>
+            <a href="#">About Us</a>
             <a href="#">Contact Us</a>
             <input type="text" id="search-bar" placeholder="Search destinations">
             <button id="search-btn">Search</button>
@@ -31,39 +31,33 @@
             </div>
         </section>
 
-        <!-- Recommendations Section -->
+        <!-- Recommendations Section with Same Background Image -->
         <section id="recommendations">
-            <div class="background-image">
-                <div class="content-overlay">
-                    <h2>Our Top Recommendations</h2>
-                    <div class="result-card">
-                        <img src="https://images.unsplash.com/photo-1506593248592-7e23b59992c7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8Ym9yYSBib3JhfGVufDB8fHx8fDE2MzgzNzU0NTk&ixlib=rb-1.2.1&q=80&w=1080" alt="Bora Bora">
-                        <h3>Bora Bora</h3>
-                        <p>A beautiful island with crystal-clear water.</p>
-                    </div>
-                    <div class="result-card">
-                        <img src="https://images.unsplash.com/photo-1553801882-62f84b801ff7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8MXx8YW5na29yIHdhdHxlbnwwfHx8fDE2MzgzNzU3Mzg&ixlib=rb-1.2.1&q=80&w=1080" alt="Angkor Wat">
-                        <h3>Angkor Wat</h3>
-                        <p>A majestic temple in Cambodia.</p>
-                    </div>
-                </div>
+            <h2>Our Recommendations</h2>
+            <div class="result-card">
+                <img src="https://images.unsplash.com/photo-1506593248592-7e23b59992c7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8Mnx8Ym9yYSBib3JhfGVufDB8fHx8fDE2MzgzNzU0NTk&ixlib=rb-1.2.1&q=80&w=1080" alt="Bora Bora">
+                <h3>Bora Bora</h3>
+                <p>A beautiful island with crystal-clear water.</p>
+            </div>
+            <div class="result-card">
+                <img src="https://images.unsplash.com/photo-1553801882-62f84b801ff7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3OXwwfDF8c2VhY2h8MXx8YW5na29yIHdhdHxlbnwwfHx8fDE2MzgzNzU3Mzg&ixlib=rb-1.2.1&q=80&w=1080" alt="Angkor Wat">
+                <h3>Angkor Wat</h3>
+                <p>A majestic temple in Cambodia.</p>
             </div>
         </section>
 
         <!-- About Us Section -->
         <section id="about-us">
-            <div class="about-content">
-                <h2>About Us</h2>
-                <p>At TravelBloom, we are passionate about helping you explore new places. Whether you're looking for a beach vacation, an adventure in the mountains, or cultural trips to iconic landmarks, we have the perfect destination for you. Let us guide you to your next unforgettable journey.</p>
-            </div>
+            <h2>About Us</h2>
+            <p>We are TravelBloom, your go-to platform for exploring and booking amazing travel destinations around the world. Our mission is to help you find the perfect vacation spot, whether you want to relax on a beach, explore ancient temples, or experience new cultures.</p>
         </section>
 
-        <!-- Results Section -->
+        <!-- Search Results Section -->
         <section id="results"></section>
     </main>
 
+    <!-- Footer Section with Social Media Links -->
     <footer>
-        <!-- Footer Section with Social Media Links -->
         <p>&copy; 2025 TravelBloom</p>
         <div class="social-media">
             <a href="#" class="social-icon">Facebook</a>
@@ -71,15 +65,6 @@
             <a href="#" class="social-icon">Instagram</a>
         </div>
     </footer>
-
-    <!-- Popup Modal for Trip Details -->
-    <div id="popup-modal" class="popup-modal">
-        <div class="popup-content">
-            <h3 id="popup-title">Trip Details</h3>
-            <p id="popup-description"></p>
-            <button id="close-popup">Close</button>
-        </div>
-    </div>
 
     <script src="travel_recommendation.js"></script>
 </body>
