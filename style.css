@@ -16,31 +16,23 @@
     padding: 20px;
 }
 
-/* Home Page Background */
-body {
-    background-image: url('https://heybus.com.ua/source/blog/perevagi_ta_nedoliki_podorozi_avtobusom.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-/* About Us Section */
 #about-us {
-    background-color: rgba(255, 165, 0, 0.8); /* Semi-transparent orange */
+    background-color: #ffa500;
     color: white;
     text-align: center;
-    padding: 50px;
-    width: 100%;
 }
 
-/* Recommendations Section */
 #recommendations {
-    background-color: rgba(34, 34, 34, 0.8); /* Dark background with transparency */
+    background-color: #222;
     color: white;
     text-align: center;
-    padding: 50px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Recommendation Container */
 .recommendations-container {
     display: flex;
     justify-content: center;
