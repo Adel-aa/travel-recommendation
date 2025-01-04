@@ -31,9 +31,8 @@ async function searchRecommendations() {
         results.innerHTML += resultCard;
     });
 
-    // If Cairo is searched, show the popup
-    if (query === "cairo") {
-        showPopup("Cairo Trip", "Explore the wonders of Cairo with its rich culture and historical landmarks.");
+    if (filtered.length === 0 && query === "cairo") {
+        alert("Details for Cairo Trip: Visit the historic sites and explore the city!");
     }
 }
 
@@ -42,18 +41,6 @@ function clearResults() {
     document.getElementById("search-bar").value = "";
     document.getElementById("results").innerHTML = "";
 }
-
-// Show Popup with trip details
-function showPopup(title, description) {
-    document.getElementById("popup-title").textContent = title;
-    document.getElementById("popup-description").textContent = description;
-    document.getElementById("popup-modal").style.display = "flex";
-}
-
-// Close Popup
-document.getElementById("close-popup").addEventListener("click", () => {
-    document.getElementById("popup-modal").style.display = "none";
-});
 
 // Event listeners for search and clear buttons
 document.getElementById("search-btn").addEventListener("click", searchRecommendations);
