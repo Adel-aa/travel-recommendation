@@ -8,7 +8,7 @@ async function fetchRecommendations() {
     }
 }
 
-        // Display search results
+// Display search results
 async function searchRecommendations() {
     const query = document.getElementById("search-bar").value.toLowerCase();
     const results = document.getElementById("results");
@@ -17,8 +17,12 @@ async function searchRecommendations() {
     const data = await fetchRecommendations();
 
     const filtered = data.filter(item =>
-        item.name.toLowerCase().includes(query) || item.type.includes(query)
+        item.name.toLowerCase().includes(query) || item.type.toLowerCase().includes(query)
     );
+
+    if (filtered.length === 0) {
+        results.innerHTML = "<p>No results found for your search.</p>";
+    }
 
     filtered.forEach(item => {
         const resultCard = `
