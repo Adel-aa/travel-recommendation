@@ -17,9 +17,15 @@ async function searchRecommendations() {
     const data = await fetchRecommendations();
 
     const filtered = data.filter(item =>
-        item.name.toLowerCase().includes(query) || item.type.includes(query)
+        item.name.toLowerCase().includes(query) || item.type.toLowerCase().includes(query)
     );
 
+    // Special case for Cairo - display popup
+    if (query === "cairo") {
+        showCairoModal();
+    }
+
+    // Display filtered recommendations
     filtered.forEach(item => {
         const resultCard = `
         <div class="result-card">
@@ -31,6 +37,18 @@ async function searchRecommendations() {
         results.innerHTML += resultCard;
     });
 }
+
+// Show the Cairo Trip details in a modal
+function showCairoModal() {
+    const modal = document.getElementById("cairo-modal");
+    modal.style.display = "block";
+}
+
+// Close the modal
+document.getElementById("close-modal").addEventListener("click", function () {
+    const modal = document.getElementById("cairo-modal");
+    modal.style.display = "none";
+});
 
 // Clear search results
 function clearResults() {
