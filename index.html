@@ -8,35 +8,36 @@
 </head>
 <body>
   <header>
-      <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav>
-          <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
-      <input type="text" id="search-bar" placeholder="Search destinations">
+      <a href="#">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#recommendations">Recommendations</a>
+      <input type="text" id="search-bar" placeholder="Search for a destination (e.g., Cairo)">
       <button id="search-btn">Search</button>
       <button id="reset-btn">Clear</button>
     </nav>
   </header>
 
   <main>
-    <!-- Main Section with Background Image -->
-    <section id="intro">
+    <!-- About Us Section -->
+    <section id="about">
       <div class="background-image">
         <div class="content-overlay">
-          <h1>Explore Your Next Adventure</h1>
-          <p>Discover new destinations, explore diverse cultures, and make unforgettable memories.</p>
-          <a href="#results" class="book-now-btn">Book Now</a>
+          <h1>About Us</h1>
+          <p>We are a travel platform that helps you discover new places, unique adventures, and unforgettable memories.</p>
         </div>
       </div>
     </section>
 
-    <!-- Results Section -->
-    <section id="results"></section>
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+      <h2>Our Top Recommendations</h2>
+      <div id="results"></div>
+    </section>
   </main>
 
   <footer>
-    <!-- Footer Section with Social Media Links -->
     <p>&copy; 2025 TravelBloom</p>
     <div class="social-media">
       <a href="#" class="social-icon">Facebook</a>
